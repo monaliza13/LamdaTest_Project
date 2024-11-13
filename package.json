@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "@cypress-audit/lighthouse": "^1.4.2",
+    "@simonsmith/cypress-image-snapshot": "^9.1.0",
+    "@testing-library/cypress": "^10.0.2",
+    "axe-core": "^4.10.0",
+    "cypress": "^13.14.0",
+    "cypress-audit": "^1.1.0",
+    "cypress-axe": "^1.5.0"
+  },
+  "dependencies": {
+    "lambdatest-cypress-cli": "^3.0.31"
+  }
+}

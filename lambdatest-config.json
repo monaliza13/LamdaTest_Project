@@ -1,0 +1,45 @@
+{
+   "lambdatest_auth": {
+      "username": "monalisa.61075180",
+      "access_key": "Dis8X4mGjhVBKUclzf2GJR6ypIw7aRgfmXu1AHulmovwXwjSSY"
+   },
+   "browsers": [
+      {
+         "browser": "Firefox",
+         "platform": "Windows 10",
+         "versions": [
+            "86.0"
+         ]
+      },
+      {
+         "browser": "Chrome",
+         "platform": "MacOS Catalina",
+         "versions": [
+            "127.0"
+         ]
+      }
+     
+   ],
+   "run_settings": {
+      
+      "reporter_config_file": "base_reporter_config.json",
+      "build_name": "Assignment-Build",
+      "parallels": 2,
+      "specs": "cypress/e2e/assignment/*.cy.js",
+      "ignore_files": "",
+      "network": true,
+      "headless": true,
+      "max_duration":2,
+      "npm_dependencies": {
+         "cypress-audit": "^1.1.0",
+         "cypress": "^13.14.0",
+         "axe-core": "^4.10.0",
+         "cypress-axe": "^1.5.0"
+         
+      }
+   },
+   "tunnel_settings": {
+      "tunnel": false,
+      "tunnel_name": null
+   }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Monalisa Sahoo",
+    "pswd": "Test1234",
+    "company": "LearningCypress",
+    "email": "jane@example.com",
+    "web": "LearningCypress.com",
+    "country": "United States",
+    "city": "Plano",
+    "adr1": "1234 Test Rd",
+    "adr2": "New Jersy",
+    "state":"TX",
+    "zip":"89675"
+}    
