@@ -31,5 +31,6 @@ lighthouse commands.
 
 | Run Type | Command |
 | ------ | ------ |
+| install cypress | `npm install cypress --save-dev` |
 | headed   | `npx cypress run -- headed` |
 | lambdatest   | `lambdatest-cypress run` |
