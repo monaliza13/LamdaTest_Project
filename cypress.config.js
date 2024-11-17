@@ -30,7 +30,9 @@ module.exports = defineConfig({
       });
     },
     video: true, // Enable video recording
-    screenshotOnRunFailure: true, // Enable screenshots
+    screenshotOnRunFailure: true, // Enables screenshot capture on test failure
+    screenshotOnRunSuccess: true, // Enables screenshot capture on test success
+    trashAssetsBeforeRuns: true,              // Clean up before each run
     chromeWebSecurity: false,
     browser: 'chrome',
     commandLineArgs: ['--no-sandbox']

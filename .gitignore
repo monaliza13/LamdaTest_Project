@@ -8,11 +8,12 @@ tmp
 .projects
 *.orig
 
-screenshots
-videos
+# screenshots
+# screenshots/
+# videos
+# videos/
 out.js
 snapshots.js
 coverage
 dist
 .vscode
-videos/
