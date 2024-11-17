@@ -15,4 +15,4 @@ snapshots.js
 coverage
 dist
 .vscode
-*.mp4
+videos/

@@ -1,5 +1,5 @@
 /// <reference types="Cypress" />
-import inputForm from "../../PageObject/formPage"
+import inputForm from "../../PageObject/FormPage"
 
 const ipform = new inputForm()
 beforeEach(() => {
