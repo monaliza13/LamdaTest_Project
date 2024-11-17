@@ -34,3 +34,12 @@ lighthouse commands.
 | install cypress | `npm install cypress --save-dev` |
 | headed   | `npx cypress run -- headed` |
 | lambdatest   | `lambdatest-cypress run` |
+
+
+## Gitpod - Try it out
+1. Click on the following link
+  https://gitpod.io/?autostart=true#https://github.com/monaliza13/LamdaTest_Project
+1. Your environment is being prepared, wait about few seconds (A splash screen will appear)
+1. VScode IDE will be displayed, a few seconds later you will see the code.
+1. Run in terminal `npx cypress run --headed`
+1. Find the test result under folders - `video` and `screenshot`
