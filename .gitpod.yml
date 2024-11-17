@@ -1,22 +1,32 @@
 image:
     file: .gitpod.Dockerfile
+# ports:
+#     - port: 5900
+#       onOpen: ignore
+#     - port: 6080
+#       onOpen: open-browser
+#     - port: 10000
+#       onOpen: ignore
+
+# Ports to expose on workspace startup
 ports:
-    - port: 5900
-      onOpen: ignore
-    - port: 6080
+    - port: 3000
       onOpen: open-browser
-    - port: 10000
-      onOpen: ignore
+      name: Website
+      description: Website Preview
+      visibility: private
+      protocol: https
+
 tasks:
-    - init: |
-        touch /tmp/.npm-lock
-        npm install
-        rm /tmp/.npm-lock
-      command: npm run dev
-    - init: sleep 1 && while [ -f /tmp/.npm-lock ]; do sleep 1; done
-      command: npm run cy:open
+    # - init: |
+    #     touch /tmp/.npm-lock
+    #     npm install
+    #     rm /tmp/.npm-lock
+    #   command: npm run dev
+    # - init: sleep 1 && while [ -f /tmp/.npm-lock ]; do sleep 1; done
+    #   command: npm run cy:open
     
     - name: Install Dependencies
-      init: npm install
+      init: npx cypress install
     - name: Run Cypress Tests
       command: npx cypress run --headed
