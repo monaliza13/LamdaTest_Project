@@ -20,6 +20,7 @@ module.exports = (on, config) => {
 
 module.exports = defineConfig({
   e2e: {
+    chromeWebSecurity: false,
     setupNodeEvents(on, config) {
       // implement node event listeners here
       //addMatchImageSnapshotPlugin(on)
@@ -30,8 +31,9 @@ module.exports = defineConfig({
     },
     video: true, // Enable video recording
     screenshotOnRunFailure: true, // Enable screenshots
-    chromeWebSecurity: false
-    
+    chromeWebSecurity: false,
+    browser: 'chrome',
+    commandLineArgs: ['--no-sandbox']
   },
   env:{
     URL: 'https://www.lambdatest.com/selenium-playground'
