@@ -8,10 +8,10 @@ tmp
 .projects
 *.orig
 
-# screenshots
-# screenshots/
-# videos
-# videos/
+screenshots
+screenshots/
+videos
+videos/
 out.js
 snapshots.js
 coverage
