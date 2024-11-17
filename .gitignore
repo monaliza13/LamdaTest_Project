@@ -10,8 +10,8 @@ tmp
 
 screenshots
 screenshots/
-videos
-videos/
+# videos
+# videos/
 out.js
 snapshots.js
 coverage

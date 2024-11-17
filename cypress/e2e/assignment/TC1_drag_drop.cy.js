@@ -11,11 +11,12 @@ it('Sliders Testcase',function() {
     cy.get('.sp__range-success > .sp__range')
     .invoke("val", "95")
     .trigger('change')
+    cy.screenshot(`${Date.now()}`);
     
-     cy.get('#rangeSuccess')
+    cy.get('#rangeSuccess')
     .invoke("val", "95")
     .trigger('change')
     .should('have.text',95)
-}
-)
+    cy.screenshot(`${Date.now()}`);
+    })
 })

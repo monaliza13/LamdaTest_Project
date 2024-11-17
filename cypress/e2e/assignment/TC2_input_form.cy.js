@@ -4,6 +4,7 @@ import inputForm from "../../PageObject/FormPage"
 const ipform = new inputForm()
 beforeEach(() => {
     cy.visit(Cypress.env('URL'));
+    cy.screenshot(`${Date.now()}`);
   });
 
   describe('Input Form', function() {
@@ -55,6 +56,7 @@ beforeEach(() => {
         cy.get('.success-msg')
         .contains('Thanks for contacting us, we will get back to you shortly.')
         .should('be.visible')
+        cy.screenshot(`${Date.now()}`);
         cy.then(Cypress.session.clearCurrentSessionData)
     })   
     })  
