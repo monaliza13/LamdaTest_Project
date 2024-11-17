@@ -20,6 +20,6 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Set environment variable to skip Cypress binary installation during npm install
-ENV CYPRESS_INSTALL_BINARY=0
+# ENV CYPRESS_INSTALL_BINARY=0
 
 WORKDIR /workspace
